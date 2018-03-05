@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/custom.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+<!-- Start java script -->
+
+ <script>
+        $(function () {
+            var $chk = $("#grpChkBox input:checkbox");
+            var $tbl = $("#someTable");
+
+            $chk.prop('checked', true);
+
+            $chk.click(function () {
+                var colToHide = $tbl.find("." + $(this).attr("name"));
+                $(colToHide).toggle();
+            });
+        });
+  </script>
+
+<!-- End JAvascript -->
+
+</head>
+<body style="background-color: #F5F5F5;">
+<!-- Start Header  -->
+
+   <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-inverse hback">
+         <div class="col-lg-1">
+       </div>
+      <div class="col-lg-2">
+        <img src="01_IITBx_Final logo231217(1)_0.png" class="img-rounded" alt="Cinque Terre" width="170" height="50"> 
+      </div>
+      <div class="col-lg-6">
+        <h3 class="htext">INFORMATION SYSTEM FOR BLENDED MOOCS</h3>
+      </div>
+      <div class="col-lg-2">
+            <select onchange="this.nextElementSibling.value=this.value" class="select-editable editdwn opt-color">
+              <option value="">Search</option>
+              <option value="115x175 mm">value 1</option>
+              <option value="120x160 mm">value 2</option>
+              <option value="120x287 mm">value 3</option>
+            </select>
+      </div>
+       <div class="col-lg-1">
+       </div>
+      </nav>
+    </div>
+  </div>
+
+<!-- End Header  -->
+
+
+<!-- Start Table Formate -->
+<!--
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">              
+    <table class="table table-striped">
+       <thead>
+      <tr>
+        <th>Heading(Supper User)</th>
+      </tr>
+    </thead>
+    <thead>
+      <tr>
+        <th>REMOTE CENTER ID</th>
+        <th>INSTITUTE NAME</th>
+         <th>UPDATED ON</th>
+        <th>EMAIL</th>
+        <th>
+        <a class="text-color" href="">user Manual</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>IITBombayX</td>
+          <td>Nov 05,'17 18:00 PM IST</td>
+        <td>username@domail.com</td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table>
+    <div class="col-sm-2">
+    </div>
+  -->
+    <!-- End Table Formate -->
+    <!-- Start Model -->
+
+
+
+    <!-- start Model -->
+<!--
+
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+  </div>
+</div>
+
+  
+
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-10">         
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-10"></div>
+    <div class="col-sm-2" style="margin-top: 30px;">
+   <div class="container">
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="container-fluid">           
+      
+<div class="container" class="modal-header">                                                                                      
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr class="content">
+        <th>REMOTE CENTER ID</th>
+        <th>INSTITUTES NAME</th>
+        <th>UPDATE ON</th>
+        <th>EMAIL</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>IITBombayX</td>
+        <td>Nov 05' 17 18:00PM IST</td>
+        <td>username@domain.com</td>
+        <td><a class="text-color" href="#">User Manual</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+    <div class="col-sm-1">
+    </div>
+
+  <div class="row">
+    <div class="col-sm-1">
+    </div>
+    <h4>Lorem ipsum dolor (STUDENT'S INFORMATION)</h4>
+    <hr>
+
+-->
+
+  <!-- model -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1" style="background-color:#F5F5F5"></div>
+    <div class="col-sm-10" style="background-color:white;">
+      <!-- Start Model Content -->
+      <h3>Student Information DC101-Demo Course</h3>
+      <button style="float: right;margin-top: -33px" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+      <br>
+      <br>
+  <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div class="container-fluid">           
+                <!-- Responsive Table -->
+                <div class="container" class="modal-header">                                                                                      
+                  <div class="table-responsive">          
+                  <table class="table">
+                    <thead>
+                      <tr class="content">
+                        <th>REMOTE CENTER ID</th>
+                        <th>INSTITUTES NAME</th>
+                        <th>UPDATE ON</th>
+                        <th>EMAIL</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>IITBombayX</td>
+                        <td>Nov 05' 17 18:00PM IST</td>
+                        <td>username@domain.com</td>
+                        <td><a class="text-color" href="#">User Manual</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+          <!-- End Responsive Table -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- End Model Content -->
+    </div>
+    <div class="col-sm-1" style="background-color:#F5F5F5"></div>
+  </div>
+</div>
+<!-- End Model -->
+
+
+   <div class="container-fluid">
+   <div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10" style="background-color: white;">
+  <ul class="nav nav-tabs">
+    <li class="active btn-back"><a data-toggle="tab" href="#home">Course Details</a></li>
+    <li class="btn-back"><a data-toggle="tab" href="#menu1">Student Details</a></li>
+    <li class="btn-back"><a data-toggle="tab" href="#menu2">Uploade Student Info</a></li>
+    <li class="btn-back"><a data-toggle="tab" href="#menu3">Marks per Problem</a></li>
+    <li class="btn-back"><a data-toggle="tab" href="#menu4">Students Who Attempted</a></li>
+    <li class="btn-back"><a data-toggle="tab" href="#menu5">Summary of Marks</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+        <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="text-color">Collapsible 1(IMPORTANT DATES)</a>
+          <a class="text-color lik" href="#">CSV</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <div>
+       <table border="1pz;">
+  <col>
+  <colgroup span="2"></colgroup>
+  <colgroup span="2"></colgroup>
+  <tr>
+    <th colspan="2" scope="colgroup">Enrollment</th>
+    <th colspan="2" scope="colgroup">Classes</th>
+  </tr>
+  <tr>
+    <th scope="col">Start</th>
+    <th scope="col">End</th>
+    <th scope="col">Start</th>
+    <th scope="col">End</th>
+  </tr>
+  <tr>
+ 
+    <td>Jan. 26, 2016</td>
+    <td>Dec. 31, 2025</td>
+    <td>Jan. 26, 2016</td>
+    <td>Dec. 31, 2025</td>
+  </tr>
+</table>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="text-color">Collapsible 2(EVALUATION POLICY)</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+        <!-- edit -->
+        <div>
+        <div id="grpChkBox" style="margin-left: 30px;">
+                <input type="checkbox" name="1"/>Assignment &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="2"/>Total &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="3"/>Mandatory &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="4"/>Weight(%) &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="5"/>Comments &nbsp; &nbsp; &nbsp;
+        </div>
+        <div class='col-md-12' style="margin-left: 30px;">   
+            <table id="someTable">
+                <thead>
+                    <tr>
+                        <th class="1">Assignment</th>
+                        <th class="2">Total</th>
+                        <th class="3">Mandatory</th>
+                        <th class="4">Weight(%)</th>
+                        <th class="5">Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="1">Data 01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                        <td class="2">Data 02 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                        <td class="3">Data 03 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                        <td class="4">Data 04 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                        <td class="5">Data 05 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    </tr>
+                &nbsp;
+                    <tr>
+                        <td class="1">Data 01 </td>
+                        <td class="2">Data 02 </td>
+                        <td class="3">Data 03 </td>
+                        <td class="4">Data 04 </td>
+                        <td class="5">Data 05 </td>
+                    </tr>
+                    <tr>
+                        <td class="1">Data 01 </td>
+                        <td class="2">Data 02 </td>
+                        <td class="3">Data 03 </td>
+                        <td class="4">Data 04 </td>
+                        <td class="5">Data 05 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+        </div>
+  <!-- edit -->
+      </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="text-color">Collapsible 3(GRADING CRITERIA)</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+         <table class="table">
+    <thead>
+      <tr>
+        <th>Grade</th>
+        <th>Min %</th>
+        <th>Max %</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A</td>
+        <td>80.00</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>65.00</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>45.00</td>
+        <td>65</td>
+      </tr>
+    </tbody>
+  </table>
+      </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="text-color">Collapsible 3(GRADING ASSIGNMENT)</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+              <table class="table">
+    <thead>
+      <tr>
+        <th>Assignment</th>
+        <th>Assignment Type</th>
+        <th>Due Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Quiz 1</td>
+        <td>Quizzes</td>
+        <td>Aug. 31, 2015, 6:30 a.m.</td>
+      </tr>
+      <tr>
+        <td>Quiz 2</td>
+        <td>Quizzes</td>
+        <td>Aug. 31, 2015, 6:30 a.m.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div></div></div>
+  
+    <div id="menu1" class="tab-pane fade">
+       
+  <!-- pagination Start -->
+  <h4>Students' Information - DC101</h4>
+  <hr>
+  <div style="margin-left: 900px;">
+    <a class="text-color" href="#">Download</a>
+  </div>
+  <br>
+  <div class="container-fluid">
+  <div class="row">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Roll Number</th>
+              <th>UserName</th>
+              <th>Email</th>
+              <th>Select</th>
+              <th>Unenroll</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>1</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+             
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+             
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+           
+            </tr>
+            <tr class="success">
+              <td>5</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+         
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+           
+            </tr>
+             <tr>
+              <td>8</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+         
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+       
+            </tr>
+          </tbody>
+        </table>   
+      </div>
+      <div class="col-md-12 text-center">
+      <ul class="pagination pagination-lg pager" id="myPager"></ul>
+      </div>
+  </div>
+</div>
+  <!-- End Pagination -->
+
+</div>
+    <div id="menu2" class="tab-pane fade">
+      <!-- uploade file start -->
+      <div class="col-sm-12 space">
+      <h4>Lorem ipsum dolor (UPLOAD STUDENT INFORMATION-IITBOMBAY/DC101/2015_25)</h4>
+      <hr>
+    </div>
+    <div class="col-sm-8 space">
+      Lorem ipsum dolor <a class="text-color" href="">Template</a> sit amet,<a class="text-color" href="">Sample.csv</a><br>
+      consectetuer adipiscing  Aenean commodose<br>
+      ligula egetse dolor.Aenean massa.<br>
+      Cum sociis natoque
+    </div>
+    <div class="col-sm-8 space">
+      <br>
+      <br>
+      <h4>File Name :-</h4>
+    <form method="post" action="index.php" enctype="multipart/form-data">
+    <input type="file" name="imag" required="required">
+    <br>
+    <input type="submit" name="submit" value="Upload File">
+  </form>
+</div>
+      <!-- uploade file End -->
+    </div>
+    <div id="menu3" class="tab-pane fade">
+       <!-- Submit Quiz -->
+           <div class="col-sm-12 space">
+      <h4>Lorem ipsum dolor (UPLOAD STUDENT INFORMATION-IITBOMBAY/DC101/2015_25)</h4>
+      <hr>
+    </div>
+    <div class="col-sm-12 space">
+      <b>Institute</b> IITBOMBAY<br>
+      <b>Teacher</b> Workshop/Administrator<br>
+      <b>Cousce ID</b> IITBOMBAY<br>
+      <hr>
+    </div>
+    <div class="col-sm-3 space">
+      <br>
+      <h5>List of Assignment</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select assignment--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+    </div>
+       <div class="col-sm-3 space">
+      <br>
+      <h5>List of Problem</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select problem--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+    </div>
+    <div class="col-sm-8">
+      <br>
+      <br>
+      <div>
+         <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+     <br>
+     <br>
+      <div class="col-sm-2">
+         <button type="submit" class="btn btn-default">CLEAR</button>
+      </div>
+      <div class="col-sm-2">
+         <button type="submit" class="btn btn-default">GRAPH</button>
+      </div>
+    </div>
+       <!-- End Submition -->
+    </div>
+        <div id="menu4" class="tab-pane fade">
+       <!-- Submit Quiz -->
+           <div class="col-sm-12 space">
+      <h4>Lorem ipsum dolor (UPLOAD STUDENT INFORMATION-IITBOMBAY/DC101/2015_25)</h4>
+      <hr>
+    </div>
+    <div class="col-sm-12 space">
+      <b>Institute</b> IITBOMBAY<br>
+      <b>Teacher</b> Workshop/Administrator<br>
+      <b>Cousce ID</b> IITBOMBAY<br>
+      <hr>
+    </div>
+    <div class="col-sm-3">
+      <br>
+      <h5 align="center">List of Assignment</h5>
+      <div class="dropdown" align="center">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select assignment--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+      </div>
+    </div>  
+    <div class="col-sm-8" align="center">
+      <br>
+      <br>
+      <div>
+         <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+       <!-- End Submition -->
+    </div>
+        <div id="menu5" class="tab-pane fade">
+       <!-- Submit Quiz -->
+           <div class="col-sm-12 space">
+      <h4>Lorem ipsum dolor (UPLOAD STUDENT INFORMATION-IITBOMBAY/DC101/2015_25)</h4>
+      <hr>
+    </div>
+    <div class="col-sm-12">
+      <div class="col-sm-8 space">
+        <b>Institute</b> :Ideal Engineering institute<br>
+        <b>Teacher</b> :Sita Devi<br>
+        <b>Cousce Name</b> :Demo Course<br>
+      </div>
+      <div class="col-sm-4">
+        <a class="text-color" href="#">Donload CSV</a>
+      </div>
+    </div>
+    <div><h3 align="center">Total number of records : 16 </h3></div>
+     <!-- pagination Start -->
+  <br>
+  <div class="container-fluid">
+  <div class="row">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Roll Number</th>
+              <th>UserName</th>
+              <th>Email</th>
+              <th>Progressin %</th>
+              <th>QZ01</th>
+              <th>QZ02</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>1</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+             <td>3</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+             <td>7</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>9</td>
+            </tr>
+            <tr class="success">
+              <td>5</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>5</td>
+            </tr>
+             <tr>
+              <td>8</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>Table cell</td>
+              <td>6</td>
+            </tr>
+          </tbody>
+        </table>   
+      </div>
+      <div class="col-md-12 text-center">
+      <ul class="pagination pagination-lg pager" id="myPager"></ul>
+      </div>
+  </div>
+</div>
+  <!-- End Pagination -->
+       <!-- End Submition -->
+    </div>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+<!-- Start footer  -->    
+<footer style="bottom: auto;">
+    <div class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> </h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70"> 
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3></h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70">
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3>  </h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70">
+                </div>
+                 <div class="col-lg-1  col-md-2 col-sm-4 col-xs-6">
+                    <h3>  </h3>
+                    <p class="vll" style="float: right;"></p>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6" style="margin-left: 20px;">
+                    <h3>  </h3>
+                    <p class="vll" style="float: right;"></p>
+          <p class="footer-header">Other Links</p>
+               
+                    <ul class="footer-link">
+                        <li class="footer-link"> <a href="#"><p footer-link class="text-color">Help</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p footer-link class="text-color">FAQs</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">Lorem ipsum</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">Lindolor sitk</p></a> </li>
+                    </ul>
+
+                </div>
+                <!-- vertical line -->
+
+                <!-- end vertical line -->
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6" style="padding-left: 20px;">
+                    <h3>  </h3>
+          <p class="footer-header">Downloads</p>
+                    <ul class="footer-link">
+                        <li class="footer-link"> <a href="#"><p class="text-color">Source code</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">User Manual</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">amet</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">consectetuer</p></a> </li>
+                    </ul>
+                </div>
+    
+            </div>
+            <!--/.row--> 
+
+        <!--/.container--> 
+</footer>
+
+<!-- End Footer  -->    
+</body>
+</html>

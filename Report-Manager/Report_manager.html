@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/custom.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: lightgray">
+
+<!-- Start Header  -->
+
+   <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-inverse hback">
+        <div class="col-lg-1">
+       	</div>
+	    <div class="col-lg-2">
+	        <img src="01_IITBx_Final logo231217(1)_0.png" class="img-rounded" alt="Cinque Terre" width="170" height="50"> 
+	    </div>
+      <div class="col-lg-6">
+        <h3 class="htext">INFORMATION SYSTEM FOR BLENDED MOOCS</h3>
+      </div>
+      <div class="col-lg-2">
+            <select onchange="this.nextElementSibling.value=this.value" class="select-editable editdwn opt-color">
+              <option value="">Search</option>
+              <option value="115x175 mm">value 1</option>
+              <option value="120x160 mm">value 2</option>
+              <option value="120x287 mm">value 3</option>
+            </select>
+      </div>
+       <div class="col-lg-1">
+       </div>
+      </nav>
+    </div>
+  </div>
+
+<!-- End Header  -->
+
+<!-- model -->
+<div class="container-fluid">
+  	<div class="row">
+	    <div class="col-sm-1"></div>
+	    <div class="col-sm-10" style="background-color:white;">
+      		<!-- Start Model Content -->
+      		<h3>Student Information DC101-Demo Course</h3>
+      		<button style="float: right;margin-top: -33px" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+      		<br>
+      		<br>
+  			<!-- Modal -->
+      		<div class="modal fade" id="myModal" role="dialog">
+        		<div class="modal-dialog modal-lg">
+          			<div class="modal-content">
+            			<div class="modal-header">
+              				<button type="button" class="close" data-dismiss="modal">&times;</button>
+              				<div class="container-fluid">           
+                			<!-- Responsive Table -->
+                				<div class="container" class="modal-header">                                                                                      
+                  					<div class="table-responsive">          
+					                  <table class="table">
+					                    <thead>
+					                      <tr class="content">
+					                        <th>REMOTE CENTER ID</th>
+					                        <th>INSTITUTES NAME</th>
+					                        <th>UPDATE ON</th>
+					                        <th>EMAIL</th>
+					                        <th></th>
+					                      </tr>
+					                    </thead>
+					                    <tbody>
+					                      <tr>
+					                        <td>0</td>
+					                        <td>IITBombayX</td>
+					                        <td>Nov 05' 17 18:00PM IST</td>
+					                        <td>username@domain.com</td>
+					                        <td><a class="text-color" href="#">User Manual</a></td>
+					                      </tr>
+					                    </tbody>
+					                  </table>
+                  					</div>
+                				</div>
+          					<!-- End Responsive Table -->
+              				</div>
+            			</div>
+          			</div>
+      			</div>
+      		</div>
+      	</div>
+<!-- End Model Content -->
+    	<div class="col-sm-1"></div>
+    </div>	
+</div>
+<!-- End Model -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10" style="background-color:white;">
+    	<div class="col-sm-10">         
+				<ul class="nav nav-tabs">
+				    <li class="active"><a data-toggle="tab" href="#home">Enrollment Information</a></li>
+				    <li><a data-toggle="tab" href="#menu1">Student Information</a></li>
+				    <li><a data-toggle="tab" href="#menu2">Assignment Information</a></li>
+				    <li><a data-toggle="tab" href="#menu3">Activity Report</a></li>
+				    <li><a data-toggle="tab" href="#menu4">Activity Report</a></li>
+				</ul>
+
+	  			<div class="tab-content">
+	    			<div id="home" class="tab-pane fade in active">
+			       		<ul class="nav nav-tabs">
+						    <li class="active"><a data-toggle="tab" href="#home1">Support Administrator User</a></li>
+						    <li><a data-toggle="tab" href="#menu11">Support Administrator Course</a></li>
+						    <li><a data-toggle="tab" href="#menu22">Reports manager</a></li>
+				  		</ul>
+				  
+			  			<div class="tab-content">
+					    	<div id="home1" class="tab-pane fade in active">
+					      		<h3>HOME</h3>
+					      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    	</div>
+					    	<div id="menu11" class="tab-pane fade">
+					      		<h3>Menu 1</h3>
+					      		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    	</div>
+					    	<div id="menu22" class="tab-pane fade">
+					      		<h3>Menu 2</h3>
+					      		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    	</div>
+			  			</div>
+	      			</div>
+
+
+
+	      			<div id="menu1" class="tab-pane fade">
+			       		<ul class="nav nav-tabs">
+						    <li class="active"><a data-toggle="tab" href="#home11">Support Administrator User</a></li>
+						    <li><a data-toggle="tab" href="#menu111">Support Administrator Course</a></li>
+						    <li><a data-toggle="tab" href="#menu222">Reports manager</a></li>
+				  		</ul>
+		  
+			  			<div class="tab-content">
+					    	<div id="home11" class="tab-pane fade in active">
+					      		<h3>HOME</h3>
+					      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    	</div>
+					    	<div id="menu111" class="tab-pane fade">
+					      		<h3>Menu 1</h3>
+					      		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    	</div>
+					    	<div id="menu222" class="tab-pane fade">
+					      		<h3>Menu 2</h3>
+					      		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    	</div>
+						</div>  	
+	      			</div>
+
+
+
+	      			<div id="menu2" class="tab-pane fade">
+			       		<ul class="nav nav-tabs">
+						    <li class="active"><a data-toggle="tab" href="#home111">Support Administrator User</a></li>
+						    <li><a data-toggle="tab" href="#menu1111">Support Administrator Course</a></li>
+						    <li><a data-toggle="tab" href="#menu2222">Reports manager</a></li>
+				  		</ul>
+		  
+			  			<div class="tab-content">
+			    			<div id="home111" class="tab-pane fade in active">
+					      		<h3>HOME</h3>
+					      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			    			</div>
+					    	<div id="menu1111" class="tab-pane fade">
+					      		<h3>Menu 1</h3>
+					      		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    	</div>
+					    	<div id="menu2222" class="tab-pane fade">
+					      		<h3>Menu 2</h3>
+					      		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    	</div>
+						</div>  	
+	      			</div>
+
+
+
+			      	<div id="menu3" class="tab-pane fade">
+			       		<ul class="nav nav-tabs">
+						    <li class="active"><a data-toggle="tab" href="#home1111">Support Administrator User</a></li>
+						    <li><a data-toggle="tab" href="#menu11111">Support Administrator Course</a></li>
+						    <li><a data-toggle="tab" href="#menu22222">Reports manager</a></li>
+				  		</ul>
+				  
+					  	<div class="tab-content">
+					    	<div id="home1111" class="tab-pane fade in active">
+					      		<h3>HOME</h3>
+					      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    	</div>
+					    	<div id="menu11111" class="tab-pane fade">
+					      		<h3>Menu 1</h3>
+					      		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    	</div>
+					    	<div id="menu22222" class="tab-pane fade">
+					      		<h3>Menu 2</h3>
+					      		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    	</div>
+						</div>  	
+			      	</div>
+
+
+			      	<div id="menu4" class="tab-pane fade">
+			       		<ul class="nav nav-tabs">
+						    <li class="active"><a data-toggle="tab" href="#home11111">Support Administrator User</a></li>
+						    <li><a data-toggle="tab" href="#menu111111">Support Administrator Course</a></li>
+						    <li><a data-toggle="tab" href="#menu222222">Reports manager</a></li>
+				  		</ul>
+				  
+					  	<div class="tab-content">
+					    	<div id="home11111" class="tab-pane fade in active">
+					      		<h3>HOME</h3>
+					      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					    	</div>
+					    	<div id="menu111111" class="tab-pane fade">
+					      		<h3>Menu 1</h3>
+					      		<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					    	</div>
+					    	<div id="menu222222" class="tab-pane fade">
+					      		<h3>Menu 2</h3>
+					      		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					    	</div>
+						</div>  	
+			      	</div>
+			    </div>  	
+	    	</div>
+	</div>
+    <div class="col-sm-1"></div>
+  </div>
+</div>	
+<!-- Start footer  -->    
+<footer style="bottom: auto;">
+    <div class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> </h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70"> 
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3></h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70">
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3>  </h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70">
+                </div>
+                 <div class="col-lg-1  col-md-2 col-sm-4 col-xs-6">
+                    <h3>  </h3>
+                    <p class="vll" style="float: right;"></p>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6" style="margin-left: 20px;">
+                    <h3>  </h3>
+                    <p class="vll" style="float: right;"></p>
+          <p class="footer-header">Other Links</p>
+               
+                    <ul class="footer-link">
+                        <li class="footer-link"> <a href="#"><p footer-link class="text-color">Help</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p footer-link class="text-color">FAQs</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">Lorem ipsum</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">Lindolor sitk</p></a> </li>
+                    </ul>
+
+                </div>
+                <!-- vertical line -->
+
+                <!-- end vertical line -->
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6" style="padding-left: 20px;">
+                    <h3>  </h3>
+          <p class="footer-header">Downloads</p>
+                    <ul class="footer-link">
+                        <li class="footer-link"> <a href="#"><p class="text-color">Source code</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">User Manual</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">amet</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">consectetuer</p></a> </li>
+                    </ul>
+                </div>
+    
+            </div>
+            <!--/.row--> 
+
+        <!--/.container--> 
+</footer>
+
+<!-- End Footer  -->  
+
+</body>
+</html>

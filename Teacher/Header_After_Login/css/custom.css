@@ -1,0 +1,28 @@
+.hback {
+    background-color: white;
+    margin-top: 10px;
+    border-top: #f1ecec;
+}
+.row{
+	margin-top: -20px;
+}
+.navbar {
+    border-radius: 5px;
+    border-color: darkgray;
+}
+h3 {
+    margin-top: 28px;
+}
+img {
+    vertical-align: middle;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.select-editable {
+    position: absolute;
+    background-color: white;
+    border: solid #e47171 1px;
+    width: 184px;
+    height: 25px;
+    margin-top: 26px;
+}

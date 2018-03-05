@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/custom.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  	$(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+});
+
+$("#btnSearch").click(function(){
+	alert($('.btn-select').text()+", "+$('.btn-select2').text());
+});
+  </script>
+</head>
+<body style="background-color: lightgray">
+
+<!-- Start Header  -->
+
+   <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-inverse hback">
+         <div class="col-lg-1">
+       </div>
+      <div class="col-lg-2">
+        <img src="01_IITBx_Final logo231217(1)_0.png" class="img-rounded" alt="Cinque Terre" width="170" height="50"> 
+      </div>
+      <div class="col-lg-6">
+        <h3 class="htext">INFORMATION SYSTEM FOR BLENDED MOOCS</h3>
+      </div>
+      <div class="col-lg-2">
+            <select onchange="this.nextElementSibling.value=this.value" class="select-editable editdwn opt-color">
+              <option value="">Search</option>
+              <option value="115x175 mm">value 1</option>
+              <option value="120x160 mm">value 2</option>
+              <option value="120x287 mm">value 3</option>
+            </select>
+      </div>
+       <div class="col-lg-1">
+       </div>
+      </nav>
+    </div>
+  </div>
+
+<!-- End Header  -->
+
+  <!-- model -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1" style="background-color:#F5F5F5"></div>
+    <div class="col-sm-10" style="background-color:white;">
+      <!-- Start Model Content -->
+      <h3>Student Information DC101-Demo Course</h3>
+      <button style="float: right;margin-top: -33px" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Teacher</button>
+      <br>
+      <br>
+  <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <div class="container-fluid">           
+                <!-- Responsive Table -->
+                <div class="container" class="modal-header">                                                                                      
+                  <div class="table-responsive">          
+                  <table class="table">
+                    <thead>
+                      <tr class="content">
+                        <th>REMOTE CENTER ID</th>
+                        <th>INSTITUTES NAME</th>
+                        <th>UPDATE ON</th>
+                        <th>EMAIL</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>IITBombayX</td>
+                        <td>Nov 05' 17 18:00PM IST</td>
+                        <td>username@domain.com</td>
+                        <td><a class="text-color" href="#">User Manual</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+          <!-- End Responsive Table -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- End Model Content -->
+    </div>
+    <div class="col-sm-1" style="background-color:#F5F5F5"></div>
+  	</div>
+</div>
+<!-- End Model -->
+
+<br>
+<div class="container-fluid">
+	<div class="row">
+    	<div class="col-sm-1">
+    	</div>
+    	<div class="col-sm-10">         
+    		<ul class="nav nav-tabs">
+				<li class="active" class="btn-back"><a data-toggle="tab" href="#home">Blended Course Administrator</a></li>
+				<li class="btn-back"><a data-toggle="tab" href="#menu1">Blended MOOCs</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-1">
+    	</div>
+    </div>
+</div>
+<br>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-1">
+    	</div>
+    	<div class="col-sm-10">
+    		<div class="tab-content">
+		    	<div id="home" class="tab-pane fade in active">
+		       		<ul class="nav nav-tabs">
+					    <li class="btn-back"><a data-toggle="tab" href="#home1">Support Administrator User</a></li>
+					    <li class="btn-back"><a data-toggle="tab" href="#menu11">Support Administrator Course</a></li>
+					    <li class="btn-back"><a data-toggle="tab" href="#menu22">Reports manager</a></li>
+			  		</ul>
+			  	</div>
+			</div>
+		</div>
+		<div class="col-sm-1">
+    	</div>
+	</div>
+</div>
+<br>
+
+<div class="container-fluid">
+  <div class="row">
+  	<div class="col-sm-1">	
+  	</div>
+    <div class="col-sm-10">
+    		<!-- Tab Start -->
+<div class="tab-content">
+  <div id="home1" class="tab-pane fade in active">
+    <!-- Start collepse -->
+    	 <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Collapsible(Course Dtails)</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+	    <div class="panel-body">
+	      					<!-- Start Scroll -->
+								<div class="row">
+								<div class="col-sm-12">
+								<div class="scroll-area" data-offset="0">
+								   <div class="container">
+								  <div class="col-sm-1">
+								    </div>
+								  <div class="col-sm-5">
+								    <h3>Heading(Fill Form to create user account)</h3>
+								    <br>
+								    <h5>RCD*</h5>
+								 <div class="dropdown">
+								    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select the institute--
+								    <span class="caret"></span></button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">cse</a></li>
+								      <li><a href="#">EE</a></li>
+								        <li><a href="#">EC</a></li>
+								      <li><a href="#">Civil</a></li>
+								    </ul>
+								  </div>
+								  <br>
+								  <form>
+								    <div class="form-group">
+								      <label for="usr">FirstName:</label>
+								      <input type="text" class="form-control" id="usr">
+								    </div>
+								     <div class="form-group">
+								      <label for="usr">LastName:</label>
+								      <input type="text" class="form-control" id="usr">
+								    </div>
+								    <div class="form-group">
+								      <label for="email">Email:</label>
+								      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+								    </div>
+								    <br>
+								    <h5>Gender*</h5>
+								    <div class="dropdown">
+								    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select Gender--
+								    <span class="caret"></span></button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">Male</a></li>
+								      <li><a href="#">Female</a></li>
+								    </ul>
+								  </div>
+								  <br>
+								  <h5>Qulification*</h5>
+								  <div class="dropdown">
+								    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select qualification--
+								    <span class="caret"></span></button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">B.tech</a></li>
+								      <li><a href="#">M.Tech</a></li>
+								    </ul>
+								  </div>
+								  <br>
+								  <h5>Department*</h5>
+								    <div class="dropdown">
+								    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select department
+								    <span class="caret"></span></button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">cse</a></li>
+								      <li><a href="#">EE</a></li>
+								        <li><a href="#">EC</a></li>
+								      <li><a href="#">Civil</a></li>
+								    </ul>
+								  </div>
+								  <br>
+								    <div class="form-group">
+								      <label for="usr">Teliphone:</label>
+								      <input type="text" class="form-control" id="usr">
+								    </div>
+								       <h5>Designation*</h5>
+								  <div class="dropdown">
+								    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select designation--
+								    <span class="caret"></span></button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">B.tech</a></li>
+								      <li><a href="#">M.Tech</a></li>
+								    </ul>
+								  </div>
+								  <br>
+								     <h5>Role*</h5>
+								  <div class="dropdown">
+								    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select role--
+								    <span class="caret"></span></button>
+								    <ul class="dropdown-menu">
+								      <li><a href="#">B.tech</a></li>
+								      <li><a href="#">M.Tech</a></li>
+								    </ul>
+								  </div>
+								  <br>
+								    <button type="submit" class="btn btn-default">Create User Account</button>
+								  </form>
+								  <br>
+								  <p>Note:- With MOOCs opening multiple avenues for promoting learning and teaching to a diverse audience,it becomes important for us to explore how learning happens inthis environment. </p>
+								  </div>
+								  <div class="col-sm-1">
+								    </div>
+								</div>
+								</div>
+								</div>
+								</div>
+								<!-- End Scroll -->
+  		</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Collapsible(Students'Information)</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+         <!-- Start Form -->
+    <div class="col-sm-3">
+      <br>
+      <h5>RCID</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select RCID--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+    </div>
+       <div class="col-sm-3">
+      <br>
+      <h5>Role</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select Role--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+    </div>
+           <div class="col-sm-3">
+      <br>
+      <h5>Email</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select Email--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+    </div>
+<!-- End Form -->
+  </div>
+    <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">Submit</button>
+    <br>
+    <br>
+    <button style="background-color: gray;margin-left: 20px; color: white" type="submit" class="btn btn-default">CLEAR</button>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Collapsible(All Students'information)</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+            <!-- Start Form -->
+            <!-- Start Form -->
+    <div class="col-sm-3">
+      <br>
+      <h5>RCID</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select RCID--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+    </div>
+       <div class="col-sm-3">
+      <br>
+      <h5>Role</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select Role--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+    </div>
+           <div class="col-sm-3">
+      <br>
+      <h5>Email</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select Email--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+    </div>
+<!-- End Form -->
+  </div>
+    <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">Submit</button>
+    <br>
+    <br>
+    </div>
+  </div>
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+        Collapsible(Invited Participate Status)</a>
+      </h4>
+    </div>
+    <div id="collapse10" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+        Collapsible(Upload mentore Details)</a>
+      </h4>
+    </div>
+    <div id="collapse11" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+        Collapsible(upload Mentore Participant)</a>
+      </h4>
+    </div>
+    <div id="collapse12" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div> 
+<!-- End Collepse -->
+  </div>
+  <div id="menu11" class="tab-pane fade">
+       <!-- Start collepse -->
+    	 <div class="panel-group" id="accordion1">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse4">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse in">
+      <div class="panel-body">
+     <h5>Courses</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select the Courses
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+   
+     </div>
+     <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">SUBMIT</button>
+  </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse5">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+             <!-- Start Form -->
+    <div class="col-sm-3">
+      <br>
+      <h5>RCID</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select RCID--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">STUDENT'S DETAILS</button>
+      <br>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">MARKS PR PROBLEM</button>
+     <br>
+     <br>
+      <button style="background-color: gray;margin-left: 20px; color: white" type="submit" class="btn btn-default">CLEAR</button>
+    </div>
+       <div class="col-sm-3">
+      <br>
+      <h5>Courses</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select the courses--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">UPLOAD STUDENT'S INFO</button>
+      <br>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">STUSENT'S WHO ATTEMPTED</button>
+     <br>
+     <br>
+      <button style="background-color: gray;margin-left: 20px; color: white" type="submit" class="btn btn-default">DEACTIVATE</button>
+    </div>
+           <div class="col-sm-3">
+      <br>
+      <h5>Teachers</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">--select Teachers--
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">SUMMERY OF MARKS</button>
+      <br>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">BULK-MOVE</button>
+    </div>
+<!-- End Form -->
+  </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">
+                <!-- Start Form -->
+    <div class="col-sm-3">
+      <br>
+      <h5>Courses</h5>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">----
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">B.tech</a></li>
+          <li><a href="#">M.Tech</a></li>
+        </ul>
+     </div>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">STUDENT'S DETAILS</button>
+     <br>
+     <br>
+      <button style="background-color: gray;margin-left: 20px; color: white" type="submit" class="btn btn-default">CLEAR</button>
+    </div>
+       <div class="col-sm-3">
+      <br>
+      <br>
+      <br>
+       <br>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">SUMMERY OF MARKS</button>
+    </div>
+    <div class="col-sm-3">
+      <br>
+      <br>
+       <br>
+      <br>
+      <br>
+     <button style="background-color: #ec5a1a;margin-left: 20px; color: white" type="submit" class="btn btn-default">MARKS PR PROBLEM</button>
+    </div>
+<!-- End Form -->
+  </div>
+    </div>
+  </div>
+</div> 
+<!-- End Collepse -->
+  </div>
+  <div id="menu22" class="tab-pane fade">
+        <!-- Start collepse -->
+    	 <div class="panel-group" id="accordion2">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse7">
+        Collapsible Group 1</a>
+      </h4>
+    </div>
+    <div id="collapse7" class="panel-collapse collapse in">
+      <div class="panel-body">
+       <div class="col-sm-8">
+      Lorem ipsum dolor <a href=""> Template </a> sit amet,<a href="">Sample.csv</a><br>
+      consectetuer adipiscing  Aenean commodose<br>
+      ligula egetse dolor.Aenean massa.<br>
+      Cum sociis natoque
+    </div>
+    <div class="col-sm-8">
+      <br>
+      <br>
+      <h4>File Name :-</h4>
+    <form method="post" action="index.php" enctype="multipart/form-data">
+    <input type="file" name="imag" required="required">
+    <br>
+    <input type="submit" name="submit" value="Upload File">
+  </form>
+</div>
+    </div>
+</div>
+  </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse8">
+        Collapsible Group 2</a>
+      </h4>
+    </div>
+    <div id="collapse8" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse9">
+        Collapsible Group 3</a>
+      </h4>
+    </div>
+    <div id="collapse9" class="panel-collapse collapse">
+      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</div>
+    </div>
+  </div>
+</div> 
+<!-- End Collepse -->
+  </div>
+</div>
+<!-- End Tab -->  	
+    </div>
+    <div class="col-sm-1">	
+    </div>
+  </div>
+</div>
+<!-- Start footer  -->    
+<footer style="bottom: auto;">
+    <div class="footer" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> </h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70"> 
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3></h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70">
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3>  </h3>
+            <img src="IITBX logo_1.png" class="img-rounded" alt="Cinque Terre" width="140" height="70">
+                </div>
+                 <div class="col-lg-1  col-md-2 col-sm-4 col-xs-6">
+                    <h3>  </h3>
+                    <p class="vll" style="float: right;"></p>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6" style="margin-left: 20px;">
+                    <h3>  </h3>
+                    <p class="vll" style="float: right;"></p>
+          <p class="footer-header">Other Links</p>
+               
+                    <ul class="footer-link">
+                        <li class="footer-link"> <a href="#"><p footer-link class="text-color">Help</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p footer-link class="text-color">FAQs</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">Lorem ipsum</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">Lindolor sitk</p></a> </li>
+                    </ul>
+
+                </div>
+                <!-- vertical line -->
+
+                <!-- end vertical line -->
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6" style="padding-left: 20px;">
+                    <h3>  </h3>
+          <p class="footer-header">Downloads</p>
+                    <ul class="footer-link">
+                        <li class="footer-link"> <a href="#"><p class="text-color">Source code</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">User Manual</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">amet</p></a> </li>
+                        <li class="footer-link"> <a href="#"><p class="text-color">consectetuer</p></a> </li>
+                    </ul>
+                </div>
+    
+            </div>
+            <!--/.row--> 
+
+        <!--/.container--> 
+</footer>
+
+<!-- End Footer  -->  
+
+</body>
+</html>
